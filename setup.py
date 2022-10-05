@@ -2,10 +2,9 @@ from setuptools import setup,find_packages
 from typing import List
 
 #Declaring variables for setup functions
-PROJECT_NAME="housing-predictor"
+PROJECT_NAME="CREDIT CARD DEFAULT PREDICTOR"
 VERSION="0.0.3"
-AUTHOR="Avnish Yadav"
-DESRCIPTION="This is a first FSDS Nov batch Machine Learning Project"
+AUTHOR="NAMDEO PATIL"
 
 REQUIREMENT_FILE_NAME="requirements.txt"
 
@@ -32,7 +31,6 @@ setup(
 name=PROJECT_NAME,
 version=VERSION,
 author=AUTHOR,
-description=DESRCIPTION,
 packages=find_packages(), 
 install_requires=get_requirements_list()
 )
