@@ -1,14 +1,14 @@
-from InsurancePremiumPrediction.Exception import InsuranceException
-from InsurancePremiumPrediction.logger import logging
-from InsurancePremiumPrediction.component.data_ingestion import DataIngestion
-from InsurancePremiumPrediction.component.data_validation import DataValidation
-from InsurancePremiumPrediction.component.data_transformation import DataTransformation
-from InsurancePremiumPrediction.config.configuration import Configuration
-from InsurancePremiumPrediction.component.model_trainer import ModelTrainer
-from InsurancePremiumPrediction.component.model_evaluation import ModelEvaluation
-from InsurancePremiumPrediction.component.model_pusher import ModelPusher
+from project.exception import InsuranceException
+from project.logger import logging
+from project.component.ingestion import DataIngestion
+from project.component.validation import DataValidation
+from project.component.transformation import DataTransformation
+from project.configured import Configuration
+from project.component.training import ModelTrainer
+from project.component.evaluation import ModelEvaluation
+from project.component.model_pusher import ModelPusher
 
-file_path=r'C:\Users\Nplite\Desktop\INEURON\INSURANCE_PREDICTION\config\config.yaml'
+file_path=r'C:\Users\Nplite\Desktop\INEURON\CREDIT_PREDICTION\config\config.yaml'
 config=Configuration(file_path)
 data_ingestion_config_=config.get_data_ingested_config()
 data_ingestion=DataIngestion(data_ingestion_config=data_ingestion_config_)
